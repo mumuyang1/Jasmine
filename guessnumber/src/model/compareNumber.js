@@ -26,23 +26,3 @@ CompareNumber.prototype.compare = function(answer,inputs){
   return a+'A'+b2+'B';
 
 }
-
-
-
-
-  // _.forEach(answer,function(answer,inputs){
-  //
-  //   if(answer === inputs){
-  //        a += 1;
-  //      }
-  //
-  //     _.forEach(inputs,function(inputs){
-  //
-  //       if(answer === inputs){
-  //             b1 += 1;
-  //           }
-  //       });
-  // });
-  //
-  // b2 = b1 - a;
-  // return a+'A'+b2+'B';
