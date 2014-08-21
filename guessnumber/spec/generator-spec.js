@@ -51,8 +51,6 @@ describe('randon number', function () {
 
     });
 
-    // it('if it is repeated',function(){})
-
     it('if it is random ',function(){
 
     var randomNumber1 = new RandomNumber();
@@ -68,7 +66,4 @@ describe('randon number', function () {
     expect(result).toBe(true);
 
     });
-
-
-
 });
