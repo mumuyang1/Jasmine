@@ -13,11 +13,10 @@ describe('randon number', function () {
       var result = true;
 
       for(var i = 0; i < value.length; i++){
-
-      if(isNaN(value[i])){
-        result = false;
+        if(isNaN(value[i])){
+          result = false;
+         }
        }
-     }
 
      expect(result).toBe(true);
 

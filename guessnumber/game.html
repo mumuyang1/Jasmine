@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="../lib/bootstrap-3.2.0-dist/css/bootstrap.min.css">
+
+    <script src="../lib/jquery-2.1.1/jquery-2.1.1.min.js"></script>
+    <script type="text/javaScript" src="../lib/bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../lib/lodash-2.4.1/lodash.compat.js"></script>
+
+    <script type="text/javaScript" src="src/main.js"></script>
+    <script type="text/javascript" src="src/model/compareNumber.js"></script>
+    <script type="text/javascript" src="src/model/generateRandomNumber.js"></script>
+    <script type="text/javascript" src="src/model/guess.js"></script>
+    <script type="text/javascript" src="src/model/game.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                      <h2 class="modal-title" id="myModalLabel">Dear player：</h2>
+                  </div>
+                  <div class="modal-body">
+                      <h3>Please input your answer in correct form!</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+      <div class="panel panel-warning">
+          <div class="panel-heading">
+            <h1>&nbsp;&nbsp;Welcome to play the guessing number game!</h1>
+            <h2 id="result"></h2>
+          </div>
+          <div class="panel-body">
+            <h3 id="illegalInput">
+              Please input the number(Now you have <span id="chance"></span>&nbsp;chance(s)&nbsp;!)<br>
+            </h3>
+          </div>
+      </div>
+      <p class="text-center">
+          <input type="text" id="input" name="FirstName">
+          <button id="submit">确定</button><br><br>
+          <button type="button" id="start" onclick="alert('Game start!')" class="btn btn-success btn-sm add">开始游戏</button>
+      </p>
+   </div>
+</body>
+</html>
