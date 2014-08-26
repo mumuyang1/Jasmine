@@ -46,6 +46,10 @@ Game.prototype.resultShow = function(inputs){
 Game.prototype.chanceReduce = function(){
 
     this.chance -= 1;
+    
+    if(this.chance < 0){
+      this.chance = 0;
+    }
 
     if(this.chance == 0){
       return 'Game over! You use out of you chances!';
@@ -53,5 +57,4 @@ Game.prototype.chanceReduce = function(){
    else{
      return this.chance;
    }
-
 };
