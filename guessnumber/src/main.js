@@ -4,11 +4,13 @@ $(document).ready(function(){
   var compareNumber = new CompareNumber();
   var guess = new Guess(randomNumber, compareNumber);
   var game = new Game(guess);
-
+  // console.log(game.guess.randomNumber);
 
   $('#start').on('click',function(){
 
     var answer = game.start();
+
+    console.log(answer);
     var value = $('#chance');
     value.text(game.chance);
   });
@@ -22,14 +24,15 @@ $(document).ready(function(){
        inputs.push(parseInt(input[i]));
      }
 
-     console.log(inputs);
+    //  console.log(inputs);
 
      if(!game.judgeInput(inputs)){
         $('#myModal').modal();
      }
-     $('#chance').text(game.chance);
-     $('#result').append(game.resultShow());
-     console.log(game.resultShow());
+     var chanceNumber = game.chanceReduce();
+     $('#chance').text(chanceNumber);
+     $('#result').text(game.resultShow(inputs));
+    //  console.log(game.resultShow());
 
   });
 });

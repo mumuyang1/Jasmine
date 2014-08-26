@@ -8,10 +8,12 @@ CompareNumber.prototype.compare = function(answer,inputs){
   var b1 = 0;
   var b2 = 0;
 
+  console.log(inputs);
   for(var i = 0; i < answer.length; i++){
-
-    if(answer[i] == inputs[i]){
+    // console.log('====='+inputs[i])
+    if(answer[i] === inputs[i]){
       a += 1;
+
     }
 
     for(var j = 0; j < inputs.length; j++){
